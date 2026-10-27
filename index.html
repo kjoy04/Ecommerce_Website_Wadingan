@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoBa&Brew</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/css.css">
+</head>
+<body>
+
+<!-- NAVIGATION: ORIGINAL MENU PRESERVED -->
+<nav class="navbar navbar-expand-lg navbar-dark boba-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="Indext.html">BoBa&amp;Brew</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="Indext.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="About.html">About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html">Contact us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testamonial</a></li>
+            </ul>
+
+            <form class="d-flex search-form" role="search" action="Products.html" method="get">
+                <input class="form-control me-2" type="search" name="search"
+                       placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- CAROUSEL -->
+<section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Image/Milktea.png" class="d-block w-100" alt="BoBa and Brew milk tea">
+                <div class="carousel-caption">
+                    <h1>BoBa &amp; Brew</h1>
+                    <p>Good Drinks, Better Days.</p>
+                    <a href="Products.html" class="btn btn-boba">Explore Our Menu</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Image/Menu1.jpeg" class="d-block w-100" alt="Milk tea menu">
+            </div>
+
+            <div class="carousel-item">
+                <img src="Image/Menu2.jpeg" class="d-block w-100" alt="Milk tea flavors">
+            </div>
+
+            <div class="carousel-item">
+                <img src="Image/Menu3.jpeg" class="d-block w-100" alt="BoBa and Brew drinks">
+            </div>
+
+            <div class="carousel-item">
+                <img src="Image/Menu4.jpeg" class="d-block w-100" alt="BoBa and Brew menu selection">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-section py-5" id="products">
+    <div class="container">
+        <h2 class="section-title">Our Favorite Flavors</h2>
+        <p class="section-description">Find your new favorite cup at BoBa &amp; Brew.</p>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card h-100">
+                    <img src="Image/Strawberry.jpeg" class="card-img-top" alt="Strawberry milk tea">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Strawberry</h5>
+                        <p class="card-text">Sweet, creamy, and refreshing strawberry milk tea.</p>
+                        <a href="Products.html" class="btn btn-boba mt-auto">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card h-100">
+                    <img src="Image/Matcha.jpeg" class="card-img-top" alt="Matcha milk tea">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Matcha</h5>
+                        <p class="card-text">Smooth matcha flavor for a relaxing, refreshing treat.</p>
+                        <a href="Products.html" class="btn btn-boba mt-auto">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card h-100">
+                    <img src="Image/Cookies &amp; Cream.jpeg" class="card-img-top" alt="Cookies and cream milk tea">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cookies &amp; Cream</h5>
+                        <p class="card-text">A creamy drink with a delicious cookies-and-cream taste.</p>
+                        <a href="Products.html" class="btn btn-boba mt-auto">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card h-100">
+                    <img src="Image/Choco.jpeg" class="card-img-top" alt="Chocolate milk tea">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Choco</h5>
+                        <p class="card-text">Rich chocolate flavor for every chocolate lover.</p>
+                        <a href="Products.html" class="btn btn-boba mt-auto">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section id="testimonials" class="testimonials-section py-5">
+    <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-description">
+            Every cup is made with love. Here are sample reviews for BoBa &amp; Brew.
+        </p>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "The strawberry milk tea is creamy, sweet, and refreshing. I love the flavor!"
+                    </p>
+                    <h5 class="customer-name">Maria S.</h5>
+                    <p class="customer-label">Milk Tea Customer</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "The matcha is smooth and delicious. It is a nice drink after a busy day."
+                    </p>
+                    <h5 class="customer-name">John R.</h5>
+                    <p class="customer-label">Milk Tea Customer</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Cookies and cream is my favorite. The taste is rich, creamy, and enjoyable!"
+                    </p>
+                    <h5 class="customer-name">Angela M.</h5>
+                    <p class="customer-label">Milk Tea Customer</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="review-note mt-4 mb-0">
+            Note: These are sample reviews. Replace them with genuine customer feedback.
+        </p>
+    </div>
+</section>
+
+<!-- ORDER BANNER -->
+<section class="order-banner py-5">
+    <div class="container text-center">
+        <h2>Ready for Your Favorite Milk Tea?</h2>
+        <p>Pick your favorite flavor and make your day a little sweeter.</p>
+        <a href="Products.html" class="btn btn-light btn-lg">Explore Our Products</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer py-4">
+    <div class="container text-center">
+        <h5>BoBa&amp;Brew</h5>
+        <p class="mb-1">Good Drinks, Better Days.</p>
+        <p class="mb-0">&copy; 2026 BoBa&amp;Brew. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JavaScript: keep this at the end of body -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
