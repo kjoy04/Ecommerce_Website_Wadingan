@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | BoBa&Brew</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="CSS/css.css">
+</head>
+
+<body>
+
+<!-- ORIGINAL NAVIGATION PRESERVED -->
+<nav class="navbar navbar-expand-lg navbar-dark boba-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">BoBa&amp;Brew</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Testamonial</a>
+                </li>
+            </ul>
+
+            <form class="d-flex search-form" id="searchForm" role="search">
+                <input class="form-control me-2" type="search"
+                       id="productSearch" placeholder="Search flavors..."
+                       aria-label="Search products">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="products-hero">
+    <div class="container">
+        <p class="eyebrow">FRESHLY MADE FOR YOU</p>
+        <h1>Our Milk Tea Menu</h1>
+        <p>Find your favorite flavor and make every sip special.</p>
+    </div>
+</header>
+
+<!-- PRODUCTS -->
+<main>
+<section class="products-section py-5" id="menu">
+    <div class="container">
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+            <div>
+                <h2 class="section-title mb-1">Our Best Sellers</h2>
+                <p class="text-muted mb-0">Choose your favorite flavor.</p>
+            </div>
+
+            <select id="sortProducts" class="form-select sort-select"
+                    aria-label="Sort products">
+                <option value="default">Default order</option>
+                <option value="name">Sort by name</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+            </select>
+        </div>
+
+        <div class="row g-4" id="productGrid">
+
+            <!-- STRAWBERRY -->
+            <div class="col-12 col-sm-6 col-lg-3 product-item"
+                 data-name="strawberry" data-price="80">
+                <div class="card product-card h-100">
+                    <div class="product-image-wrap">
+                        <img src="Image/Strawberry.jpeg" class="card-img-top"
+                             alt="Strawberry milk tea">
+                        <span class="product-badge">Popular</span>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Strawberry</h3>
+                        <p class="product-description">Sweet and creamy strawberry milk tea for a refreshing treat.</p>
+                        <p class="product-price">₱80.00 <small>/ regular</small></p>
+
+                        <label class="form-label" for="size-strawberry">Size</label>
+                        <select class="form-select mb-3" id="size-strawberry">
+                            <option value="0">Regular - ₱80</option>
+                            <option value="20">Large - ₱100</option>
+                        </select>
+
+                        <label class="form-label" for="qty-strawberry">Quantity</label>
+                        <input type="number" class="form-control mb-3"
+                               id="qty-strawberry" min="1" max="20" value="1">
+
+                        <button class="btn btn-boba mt-auto order-button"
+                                data-product="Strawberry" data-price="80"
+                                data-size="size-strawberry"
+                                data-quantity="qty-strawberry">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MATCHA -->
+            <div class="col-12 col-sm-6 col-lg-3 product-item"
+                 data-name="matcha" data-price="80">
+                <div class="card product-card h-100">
+                    <div class="product-image-wrap">
+                        <img src="Image/Matcha.jpeg" class="card-img-top"
+                             alt="Matcha milk tea">
+                        <span class="product-badge">Favorite</span>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Matcha</h3>
+                        <p class="product-description">Smooth, creamy matcha with a rich and refreshing tea flavor.</p>
+                        <p class="product-price">₱80.00 <small>/ regular</small></p>
+
+                        <label class="form-label" for="size-matcha">Size</label>
+                        <select class="form-select mb-3" id="size-matcha">
+                            <option value="0">Regular - ₱80</option>
+                            <option value="20">Large - ₱100</option>
+                        </select>
+
+                        <label class="form-label" for="qty-matcha">Quantity</label>
+                        <input type="number" class="form-control mb-3"
+                               id="qty-matcha" min="1" max="20" value="1">
+
+                        <button class="btn btn-boba mt-auto order-button"
+                                data-product="Matcha" data-price="80"
+                                data-size="size-matcha"
+                                data-quantity="qty-matcha">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKIES AND CREAM -->
+            <div class="col-12 col-sm-6 col-lg-3 product-item"
+                 data-name="cookies cream" data-price="80">
+                <div class="card product-card h-100">
+                    <div class="product-image-wrap">
+                        <img src="Image/Cookies&Cream.jpeg" class="card-img-top"
+                             alt="Cookies and cream milk tea">
+                        <span class="product-badge">Creamy</span>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Cookies &amp; Cream</h3>
+                        <p class="product-description">A delicious creamy drink with a cookies-and-cream taste.</p>
+                        <p class="product-price">₱80.00 <small>/ regular</small></p>
+
+                        <label class="form-label" for="size-cookies">Size</label>
+                        <select class="form-select mb-3" id="size-cookies">
+                            <option value="0">Regular - ₱80</option>
+                            <option value="20">Large - ₱100</option>
+                        </select>
+
+                        <label class="form-label" for="qty-cookies">Quantity</label>
+                        <input type="number" class="form-control mb-3"
+                               id="qty-cookies" min="1" max="20" value="1">
+
+                        <button class="btn btn-boba mt-auto order-button"
+                                data-product="Cookies & Cream" data-price="80"
+                                data-size="size-cookies"
+                                data-quantity="qty-cookies">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHOCO -->
+            <div class="col-12 col-sm-6 col-lg-3 product-item"
+                 data-name="choco" data-price="80">
+                <div class="card product-card h-100">
+                    <div class="product-image-wrap">
+                        <img src="Image/Choco.jpeg" class="card-img-top"
+                             alt="Chocolate milk tea">
+                        <span class="product-badge">Chocolate</span>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Choco</h3>
+                        <p class="product-description">Rich chocolate flavor for a delicious and comforting drink.</p>
+                        <p class="product-price">₱80.00 <small>/ regular</small></p>
+
+                        <label class="form-label" for="size-choco">Size</label>
+                        <select class="form-select mb-3" id="size-choco">
+                            <option value="0">Regular - ₱80</option>
+                            <option value="20">Large - ₱100</option>
+                        </select>
+
+                        <label class="form-label" for="qty-choco">Quantity</label>
+                        <input type="number" class="form-control mb-3"
+                               id="qty-choco" min="1" max="20" value="1">
+
+                        <button class="btn btn-boba mt-auto order-button"
+                                data-product="Choco" data-price="80"
+                                data-size="size-choco"
+                                data-quantity="qty-choco">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 d-none" id="noResults">
+                <p class="text-center py-5">No matching milk tea flavors found.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ORDER BANNER -->
+<section class="order-info-section py-5">
+    <div class="container text-center">
+        <h2>Made with Love, Served with Happiness</h2>
+        <p>Choose your flavor, size, and quantity to see your order summary.</p>
+        <p><small>Sample menu prices. Update these to match your actual menu.</small></p>
+    </div>
+</section>
+</main>
+
+<!-- ORDER SUMMARY MODAL -->
+<div class="modal fade" id="orderModal" tabindex="-1"
+     aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content order-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderModalLabel">Your Order Summary</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Product:</strong> <span id="summaryProduct"></span></p>
+                <p><strong>Size:</strong> <span id="summarySize"></span></p>
+                <p><strong>Quantity:</strong> <span id="summaryQuantity"></span></p>
+                <hr>
+                <h4 class="order-total">Total: <span id="summaryTotal"></span></h4>
+                <p class="small text-muted mt-3">
+                    Demo only: this does not submit a real order or payment.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal">Continue Shopping</button>
+                <button type="button" class="btn btn-boba" id="confirmDemoOrder">
+                    Confirm Demo Order
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer py-4">
+    <div class="container text-center">
+        <h5>BoBa&amp;Brew</h5>
+        <p class="mb-1">Good Drinks, Better Days.</p>
+        <p class="mb-0">&copy; 2026 BoBa&amp;Brew. All rights reserved.</p>
+        <a href="index.html" class="footer-home-link">Back to Home</a>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</script>
+
+</body>
+</html>
